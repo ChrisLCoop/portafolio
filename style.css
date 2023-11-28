@@ -164,6 +164,14 @@ header{
     
 }
 
+.content-abt-bloqs{
+    display: flex;
+}
+
+.info-contacto{
+    width: 45%;
+}
+
 .info-contacto h3{
     font-family: var(--fuente-texto-principal);
     font-size: 1.6rem;
@@ -171,6 +179,7 @@ header{
 
 .info-contacto ul li{
     list-style: none;
+    line-height: 2rem;
 }
 
 .info-contacto ul li strong{
@@ -178,6 +187,24 @@ header{
     display: inline-block;
     margin-right: 2rem;
     width: 6rem;
+}
+
+.info-contacto ul li span{
+    background-color: #1cb698;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.1rem 0.3rem;
+    border-radius: 3px;
+}
+
+.info-intereses{
+    width: 50%;
+}
+
+.info-intereses .card-int{
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
 }
 
 .info-intereses .card-int .card{
@@ -188,6 +215,8 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: all ease-in 0.2s;
+    border-radius: 1rem;
 }
 
 .info-intereses .card-int .card img{
@@ -196,6 +225,14 @@ header{
     
 }
 
+.info-intereses .card-int .card h4{
+    padding: 0.7rem 0;
+}
+
+.info-intereses .card-int .card:hover{
+    background-color: #1cb698;
+
+}
 
 
 
