@@ -14,18 +14,18 @@
         </div>
         <nav>
           <ul>
-            <li><a href="">INICIO</a></li>
-            <li><a href="">SOBRE MI</a></li>
-            <li><a href="">SKILLS</a></li>
-            <li><a href="">CURRICULUM</a></li>
-            <li><a href="">PORTFOLIO</a></li>
-            <li><a href="">CONTACTO</a></li>
+            <li><a href="#inicio">INICIO</a></li>
+            <li><a href="#acerca-de">SOBRE MI</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#cv">CURRICULUM</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
-      <div class="card-portada">
+      <div class="card-portada" id="inicio">
         <div class="card-info">
           <figure>
             <img src="./img/gato-con-botas.jpg" alt="" />
@@ -51,7 +51,7 @@
           </div>
         </div>
       </div>
-      <div class="content-about-gen">
+      <div class="content-about-gen" id="acerca-de">
         <div class="content-about-me-inf">
           <div class="ctn-abt-titulo">
             <h2>Sobre Mí</h2>
@@ -129,7 +129,7 @@
           </div>
         </div>
       </div>
-      <div class="content-skills">
+      <div class="content-skills" id="skills">
         <h2>Skills</h2>
         <div class="content-skl-inf-dtl">
           <div class="group-skl">
@@ -220,7 +220,7 @@
           </div>
         </div>
       </div>
-      <div class="content-cv">
+      <div class="content-cv" id="cv">
         <h2>Curriculum</h2>
         <div class="grp-cv-inf">
           <div class="cards-inf-dtl">
@@ -353,7 +353,7 @@
           </div>
         </div>
       </div>
-      <div class="content-portfolio">
+      <div class="content-portfolio" id="portfolio">
         <h2>PORTFOLIO</h2>
         <div class="content-cards-dtl-po">
           <div class="cards-pto">
@@ -368,7 +368,7 @@
             <div class="card-ptd-gr background-card-pfl-2">
               <div class="content-link-ptd-ccd">
                 <a href="https://practica-figma-2.vercel.app/" target="_blank">
-                  <h3>Landinpage Sample 2°</h3>
+                  <h3>Landing page Sample 2°</h3>
                   <p>practica</p>
                 </a>
               </div>
@@ -376,7 +376,7 @@
             <div class="card-ptd-gr background-card-pfl-3">
               <div class="content-link-ptd-ccd">
                 <a href="https://practica-figma-3.vercel.app/" target="_blank">
-                  <h3>Landinpage Sample 3°</h3>
+                  <h3>Landing page Sample 3°</h3>
                   <p>Practica</p>
                 </a>
               </div>
@@ -386,7 +386,7 @@
             <div class="card-ptd-gr background-card-pfl-4">
               <div class="content-link-ptd-ccd">
                 <a href="https://vercel.com/christians-projects-caed3110/practica-figma-4" target="_blank">
-                  <h3>Landinpage Sample 4°</h3>
+                  <h3>Landing page Sample 4°</h3>
                   <p>Practica</p>
                 </a>
               </div>
@@ -394,7 +394,7 @@
             <div class="card-ptd-gr background-card-pfl-5">
               <div class="content-link-ptd-ccd">
                 <a href="https://ejercicio-05-figma.vercel.app/" target="_blank">
-                  <h3>Landinpage Sample 5°</h3>
+                  <h3>Landing page Sample 5°</h3>
                   <p>Practica</p>
                 </a>
               </div>
@@ -410,17 +410,17 @@
           </div>
         </div>
       </div>
-      <div class="content-contacto">
-        <div class="group-ctt">
-          <h2>CONTACTO</h2>
+      <div class="content-contacto" id="contacto">
+        <h2>CONTACTO</h2>
+        <div class="group-ctt-contact">
           <div class="cards-ctt-dtl">
             <div class="card-info-ctt">
-              <form action="">
-                <input type="text" placeholder="Tú nombre" />
-                <input type="tel" placeholder="Número telefónico" />
-                <input type="email" placeholder="Dirección de correo" />
-                <input type="text" placeholder="Tema" />
-                <textarea
+              <form class="formulario-contacto" action="">
+                <input class="ingreso-datos" type="text" placeholder="Tú nombre" />
+                <input class="ingreso-datos" type="tel" placeholder="Número telefónico" />
+                <input class="ingreso-datos" type="email" placeholder="Dirección de correo" />
+                <input class="ingreso-datos" type="text" placeholder="Tema" />
+                <textarea class="text-area-info-st"
                   placeholder="Mensaje"
                   name=""
                   id=""
@@ -429,8 +429,7 @@
                 ></textarea>
                 <div class="send-info-ctt">
                   <div class="content-sic-dtl">
-                    <input type="button" value="Enviar mensaje" />
-                    <img src="" alt="" />
+                    <input class="btn-form-send" type="button" value="Enviar mensaje"/>
                   </div>
                 </div>
               </form>
@@ -439,9 +438,9 @@
           <div class="cards-ctt-dtl">
             <div class="dtl-maps-info">
               <div class="card-gps-dtl">
-                <p><img src="" alt="" /> Perú Lima, Santa Anita</p>
-                <p><img src="" alt="" /> Llamanos: 912-485-345</p>
-                <p><img src="" alt="" /> Email: umbrelacorp@nemesis.com</p>
+                <p><img src="./img/locate.png" alt="" /> Perú Lima, Santa Anita</p>
+                <p><img src="./img/mobile.png" alt="" /> Llamanos: 912-485-345</p>
+                <p><img src="./img/mail.png" alt="" /> Email: christian.limas.e@gmail.com</p>
               </div>
             </div>
           </div>
@@ -451,14 +450,14 @@
     <footer>
       <div class="content-footer">
         <div class="acc-drtc-port">
-          <img src="" alt="" />
+          <a href="#inicio"><img src="./img/arrow.png" alt="" /></a>
         </div>
         <div class="content-ftt-link">
-          <a href=""><img src="" alt="" /></a>
-          <a href=""><img src="" alt="" /></a>
-          <a href=""><img src="" alt="" /></a>
-          <a href=""><img src="" alt="" /></a>
-          <a href=""><img src="" alt="" /></a>
+          <a href=""><img src="./img/fb_icon-icons.com_65434.png" alt="" /></a>
+          <a href=""><img src="./img/instagram_icon-icons.com_65435.png" alt="" /></a>
+          <a href=""><img src="./img/skype_icon-icons.com_65445.png" alt="" /></a>
+          <a href=""><img src="./img/youtube_icon-icons.com_65437.png" alt="" /></a>
+          <a href=""><img src="./img/gmail_icon-icons.com_65438.png" alt="" /></a>
         </div>
       </div>
     </footer>

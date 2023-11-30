@@ -17,6 +17,7 @@
 
 html{
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 
@@ -25,6 +26,7 @@ header{
     background-color: #1e2326;
     position: fixed;
     width: 100%;
+    z-index: 30;
 }
 
 .content-header{
@@ -542,6 +544,7 @@ header{
 .content-portfolio{
     background-color: #252a2e;
     color: var(--texto-blanco);
+    padding-bottom: 2rem;
 }
 
 .content-portfolio h2{
@@ -632,5 +635,159 @@ header{
     opacity: 1;
 }
 
+/*---contacto----*/
 
+.content-contacto{
+    background-image:linear-gradient(to top, rgba(30, 35, 38, 0.658),rgba(30, 35, 38, 0.781)),url(./img/mapa-fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 47rem;
+    color: var(--texto-blanco);
+}
 
+.content-contacto h2{
+    text-align: center;
+    font-family: var(--fuente-texto-principal);
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.group-ctt-contact{
+    display: flex;
+    max-width: var(--ancho-maximo-body);
+    margin: 0 auto;
+    width: 92%;
+    justify-content: space-around;
+
+}
+
+.group-ctt-contact .cards-ctt-dtl{
+    flex: 49%;
+}
+
+.group-ctt-contact .cards-ctt-dtl .card-info-ctt .formulario-contacto{
+    width: 95%;
+    margin: 0 auto;
+} 
+
+.group-ctt-contact .cards-ctt-dtl .card-info-ctt .formulario-contacto .ingreso-datos{
+    width: 100%;
+    padding: 1.2rem 0.5rem;
+    background-color: #252a2e;
+    border: none;
+    margin-bottom: 1rem;
+    color: var(--texto-blanco);
+}
+
+.group-ctt-contact .cards-ctt-dtl .card-info-ctt .formulario-contacto .text-area-info-st{
+    width: 100%;
+    height: 14rem;
+    background-color: #252a2e;
+    padding: 0.5rem;
+    border: none;
+    color: #fff;
+}
+
+.send-info-ctt{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-form-send{
+    padding: 0.7rem 1.7rem;
+    color: var(--texto-blanco);
+    background-color: #1e2326;
+    border: solid #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all ease-in-out 0.4s;
+}
+
+.btn-form-send:hover{
+    background-color: var(--color-verde-especial);
+}
+
+.dtl-maps-info{
+    background-image: url(./img/google-maps.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 28rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dtl-maps-info .card-gps-dtl{
+    background-color: #252a2e;
+    width: 16rem;
+    height: 10.5rem;
+    padding: 1.2rem;
+}
+
+.dtl-maps-info .card-gps-dtl p{
+    padding-bottom: 1.2rem;
+}
+
+.dtl-maps-info .card-gps-dtl p img{
+    width: 0.8rem;
+    height: 0.8rem;
+
+}
+
+/*------footer-----*/
+
+footer{
+    background-color: #252a2e;
+    position: relative;
+}
+
+.content-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: var(--ancho-maximo-body);
+    margin: 0 auto;
+    width: 96%;
+    height: 12rem;
+}
+
+.acc-drtc-port{
+    position: absolute;
+    top: -23px;
+}
+
+.acc-drtc-port a img{
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--color-verde-especial);
+    border-radius: 50%;
+}
+
+.content-ftt-link{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-ftt-link a{
+    
+    border-radius: 50%;
+    display: flex;
+    transition: all ease-in-out 0.4s;
+}
+
+.content-ftt-link a img{
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.content-ftt-link a:hover{
+    background-color: #1cb698;
+}
